@@ -66,16 +66,25 @@ export const HeaderContainer = styled.header<HeaderProps>`
       height: 100vh;
       display: none;
       background: ${props => props.theme["primary-color-light"]};
-      transition: all 0.3s ease-out;
+      transition: all 0.2s ease-out;
 
       ul {
-        width: 100%;
-        margin: 88px 2rem;
+        width: 80%;
+        margin: 88px 2rem 0;
+        padding-bottom: 2rem;
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+        opacity: ${props => props.menuMobile ? "1" : "0"};
+        transition: all 0.2s ease-out;
+
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 112%;
 
         li {
+            height: 2rem;
             a {
             display: flex;
             align-items: center;
@@ -87,7 +96,7 @@ export const HeaderContainer = styled.header<HeaderProps>`
             }
 
             &.activeLink {
-              color: ${(props) => props.theme["primary-color-dark"]};
+              color: ${(props) => props.theme["gray-200"]};
             }
           }
         }
@@ -116,6 +125,7 @@ export const HeaderContainer = styled.header<HeaderProps>`
       .menu-mobile, .btn-mobile {
         display: block;
       }
+      
     }
   }
 `;
