@@ -6,7 +6,8 @@ import { useState } from "react";
 
 export function Header() {
   const router = useRouter();
-  const [isOpenBurguerMenu, setOpenBurguerMenu] = useState(true);
+  const [isOpenBurguerMenu, setOpenBurguerMenu] = useState(false);
+  const [colorHamburguerMenu, setColorHamburguerMenu] = useState("#101010");
 
   function openMenuMobile() {
     setOpenBurguerMenu(!isOpenBurguerMenu);
@@ -120,7 +121,18 @@ export function Header() {
           </ul>
         </nav>
         <button onClick={openMenuMobile} className="btn-mobile">
-          <Hamburger toggled={isOpenBurguerMenu} toggle={setOpenBurguerMenu} />
+          <Hamburger
+            toggled={isOpenBurguerMenu}
+            toggle={setOpenBurguerMenu}
+            color={colorHamburguerMenu}
+            onToggle={(toggled) => {
+              if (toggled) {
+                setColorHamburguerMenu("#FFFFFF");
+              } else {
+                setColorHamburguerMenu("#101010");
+              }
+            }}
+          />
         </button>
       </div>
     </HeaderContainer>
