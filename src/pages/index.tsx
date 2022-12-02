@@ -1,9 +1,17 @@
 import Head from "next/head";
-import { ButtonOrcamento, HomeContainer, Slide } from "../styles/pages/Index";
+import {
+  ButtonOrcamento,
+  CardServicos,
+  HomeContainer,
+  SecondaryButton,
+  ServicosContainer,
+  Slide,
+} from "../styles/pages/Index";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import { FileText, Fire, House, Lightning } from "phosphor-react";
 
 export default function Home() {
   return (
@@ -56,6 +64,46 @@ export default function Home() {
             </Slide>
           </SwiperSlide>
         </Swiper>
+        <ServicosContainer>
+          <div className="grid">
+            <h2>Serviços</h2>
+            <div className="servicos">
+              <CardServicos>
+                <Fire size={60} weight="fill" />
+                <h4>Projeto de combate ao incêndio</h4>
+                <p>
+                  Collect reviews, Q&A and other content from your customers
+                  started.
+                </p>
+              </CardServicos>
+              <CardServicos>
+                <Lightning size={60} weight="fill" />
+                <h4>Entrada de energia elétrica</h4>
+                <p>
+                  Collect reviews, Q&A and other content from your customers
+                  started.
+                </p>
+              </CardServicos>
+              <CardServicos>
+                <House size={60} weight="fill" />
+                <h4>Instalação elétrica</h4>
+                <p>
+                  Collect reviews, Q&A and other content from your customers
+                  started.
+                </p>
+              </CardServicos>
+              <CardServicos>
+                <FileText size={60} weight="fill" />
+                <h4>ART elétrica</h4>
+                <p>
+                  Collect reviews, Q&A and other content from your customers
+                  started.
+                </p>
+              </CardServicos>
+            </div>
+            <SecondaryButton>Todos os serviços</SecondaryButton>
+          </div>
+        </ServicosContainer>
       </HomeContainer>
     </>
   );
