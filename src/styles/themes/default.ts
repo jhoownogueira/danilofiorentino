@@ -13,4 +13,5 @@ export const defaultTheme = {
 
     'white': '#FFFFFF',
     'black': '#1A1A1A',
+    'green': '#25D366',
   };
