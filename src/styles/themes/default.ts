@@ -2,6 +2,7 @@ export const defaultTheme = {
     'primary-color-dark': '#010626',
     'primary-color': '#021859',
     'primary-color-light': '#0455BF',
+    'primary-color-hover': '#006EFF',
 
     'gray-100': '#EDEDED',
     'gray-200': '#C9C9C9',
