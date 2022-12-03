@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { EmConstrucao } from "../components/EmConstrução";
 
 export default function Contato() {
   return (
@@ -6,7 +7,7 @@ export default function Contato() {
       <Head>
         <title>Contato | Eng.Danilo</title>
       </Head>
-      <h1>Contato</h1>
+      <EmConstrucao />
     </>
   );
 }
