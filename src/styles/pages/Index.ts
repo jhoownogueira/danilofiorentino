@@ -13,11 +13,12 @@ export const HomeContainer = styled.section`
     height: 720px;
 
     .swiper-pagination {
+      margin-bottom: 1rem;
       .swiper-pagination-bullet {
         width: 60px;
         height: 5px;
         border-radius: 0;
-        background: ${(props) => props.theme["primary-color-light"]};
+        background: ${(props) => props.theme["primary-color-hover"]};
         transition: all 0.3s;
         margin: 0.2rem;
       }
@@ -28,7 +29,7 @@ export const HomeContainer = styled.section`
         transform: scale(1);
         height: 4px;
         opacity: 1;
-        background: ${(props) => props.theme["gray-200"]};
+        background: ${(props) => props.theme.white};
       }
     }
   }
@@ -60,7 +61,7 @@ export const Slide = styled.div<ImageBackgroundProps>`
     line-height: 66px;
     text-align: center;
     letter-spacing: -0.01em;
-    color: ${(props) => props.theme["primary-color-light"]};
+    color: ${(props) => props.theme.white};
   }
 
   p {
@@ -73,7 +74,7 @@ export const Slide = styled.div<ImageBackgroundProps>`
     font-size: 1.5rem;
     line-height: 33px;
     text-align: center;
-    color: ${(props) => props.theme["gray-600"]};
+    color: ${(props) => props.theme.white};
   }
 
   @media (max-width: 850px) {
@@ -90,13 +91,16 @@ export const Slide = styled.div<ImageBackgroundProps>`
   }
 `;
 
-export const ButtonOrcamento = styled.button`
+export const ButtonOrcamento = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   line-height: 48px;
   max-width: 37.5rem;
   border-radius: 4px;
   border: 1px solid transparent;
-  background: ${(props) => props.theme["primary-color-light"]};
+  background: ${(props) => props.theme["primary-color-hover"]};
   color: ${(props) => props.theme.white};
 
   font-weight: 700;
@@ -104,7 +108,7 @@ export const ButtonOrcamento = styled.button`
 
   &:hover {
     transition: all 0.2s ease-out;
-    background: ${(props) => props.theme["primary-color-hover"]};
+    background: ${(props) => props.theme["primary-color-light"]};
   }
 `;
 
