@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { EmConstrucao } from "../components/EmConstrução";
 
 export default function Sobremim() {
   return (
@@ -6,7 +7,7 @@ export default function Sobremim() {
       <Head>
         <title>Sobre mim | Eng.Danilo</title>
       </Head>
-      <h1>Sobre Mim</h1>
+      <EmConstrucao />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { EmConstrucao } from "../components/EmConstrução";
 
 export default function Duvidas() {
   return (
@@ -6,7 +7,7 @@ export default function Duvidas() {
       <Head>
         <title>Dúvidas | Eng.Danilo</title>
       </Head>
-      <h1>Dúvidas</h1>
+      <EmConstrucao />
     </>
   );
 }

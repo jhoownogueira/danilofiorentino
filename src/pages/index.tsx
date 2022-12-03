@@ -18,8 +18,11 @@ import { ButtonWhatsapp } from "../styles/Header";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -143,7 +146,14 @@ export default function Home() {
                 </p>
               </CardServicos>
             </div>
-            <SecondaryButton>Todos os serviços</SecondaryButton>
+            <SecondaryButton>
+              <Link
+                href="/servicos"
+                className={router.pathname == "/" ? "activeLink" : ""}
+              >
+                Todos os serviços
+              </Link>
+            </SecondaryButton>
           </div>
         </ServicosContainer>
         <SobreMim data-aos="fade-up" data-aos-duration="800">

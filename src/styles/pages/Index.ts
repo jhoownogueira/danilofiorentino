@@ -190,6 +190,9 @@ export const CardServicos = styled.div`
 `;
 
 export const SecondaryButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 17.75rem;
   line-height: 3rem;
@@ -200,10 +203,18 @@ export const SecondaryButton = styled.button`
   font-weight: 700;
   font-size: 1rem;
 
+  a {
+    width: 100%;
+    color: ${(props) => props.theme["primary-color-light"]};
+  }
+
   &:hover {
     background: ${(props) => props.theme["primary-color-light"]};
-    color: ${(props) => props.theme.white};
     transition: all 0.2s ease-out;
+
+    a {
+      color: ${(props) => props.theme.white};
+    }
   }
 `;
 
@@ -302,7 +313,6 @@ export const SobreMim = styled.section`
         }
       }
     }
-
   }
 
   @media (max-width: 850px) {
