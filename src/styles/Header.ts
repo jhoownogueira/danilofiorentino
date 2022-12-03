@@ -137,9 +137,10 @@ export const ButtonWhatsapp = styled.a`
   gap: 0.25rem;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${(props) => props.theme["primary-color-light"]};
   border-radius: 4px;
-  background: ${(props) => props.theme["primary-color-light"]};
+
+  background: ${(props) => props.theme.green};
+    border: 1px solid ${(props) => props.theme.green};
 
   line-height: 2.2rem;
   font-size: 1rem;
@@ -152,7 +153,7 @@ export const ButtonWhatsapp = styled.a`
 
   &:hover {
     transition: all 0.2s;
-    background: ${(props) => props.theme.green};
-    border: 1px solid ${(props) => props.theme.green};
+    background: ${(props) => props.theme["primary-color-light"]};
+    border: 1px solid ${(props) => props.theme["primary-color-light"]};
   }
 `;
