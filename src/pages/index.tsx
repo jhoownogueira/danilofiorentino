@@ -15,7 +15,18 @@ import "swiper/css/pagination";
 import { FileText, Fire, House, Lightning } from "phosphor-react";
 import { ButtonWhatsapp } from "../styles/Header";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -37,12 +48,14 @@ export default function Home() {
         >
           <SwiperSlide>
             <Slide backgroundImage="/images/slide01.jpg">
-              <h1>Projetos Elétricos</h1>
-              <p>
+              <h1 data-aos="fade-right">Projetos Elétricos</h1>
+              <p data-aos="fade-left">
                 Residencial, comercial, industrial, loteamento, posto de
                 transformação rural e sob medida para sua empresa.
               </p>
-              <ButtonOrcamento>Faça um orçamento</ButtonOrcamento>
+              <ButtonOrcamento data-aos="fade-in" data-aos-duration="2000">
+                Faça um orçamento
+              </ButtonOrcamento>
             </Slide>
           </SwiperSlide>
           <SwiperSlide>
@@ -70,7 +83,7 @@ export default function Home() {
           <div className="grid">
             <h2>Serviços</h2>
             <div className="servicos">
-              <CardServicos>
+              <CardServicos data-aos="fade-up" data-aos-duration="800">
                 <Fire size={60} weight="fill" />
                 <h4>Projeto de combate ao incêndio</h4>
                 <p>
@@ -78,7 +91,11 @@ export default function Home() {
                   started.
                 </p>
               </CardServicos>
-              <CardServicos>
+              <CardServicos
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
                 <Lightning size={60} weight="fill" />
                 <h4>Entrada de energia elétrica</h4>
                 <p>
@@ -86,7 +103,11 @@ export default function Home() {
                   started.
                 </p>
               </CardServicos>
-              <CardServicos>
+              <CardServicos
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="400"
+              >
                 <House size={60} weight="fill" />
                 <h4>Instalação elétrica</h4>
                 <p>
@@ -94,7 +115,11 @@ export default function Home() {
                   started.
                 </p>
               </CardServicos>
-              <CardServicos>
+              <CardServicos
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="600"
+              >
                 <FileText size={60} weight="fill" />
                 <h4>ART elétrica</h4>
                 <p>
@@ -106,7 +131,7 @@ export default function Home() {
             <SecondaryButton>Todos os serviços</SecondaryButton>
           </div>
         </ServicosContainer>
-        <SobreMim>
+        <SobreMim data-aos="fade-up" data-aos-duration="800">
           <div className="grid">
             <h2>Sobre mim</h2>
             <div className="content">
@@ -129,7 +154,12 @@ export default function Home() {
                 <img src="/images/daniloHome.png" />
               </div>
             </div>
-            <div className="banner">
+            <div
+              className="banner"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
               <h3>Faça um orçamento comigo</h3>
               <ButtonWhatsapp
                 href="https://api.whatsapp.com/send?phone=5517996353232"
