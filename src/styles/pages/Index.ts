@@ -106,7 +106,6 @@ export const ButtonOrcamento = styled.button`
     transition: all 0.2s ease-out;
     background: ${(props) => props.theme["primary-color-hover"]};
   }
-
 `;
 
 export const ServicosContainer = styled.section`
@@ -130,7 +129,7 @@ export const ServicosContainer = styled.section`
       font-size: 2.5rem;
       line-height: 3rem;
       text-align: center;
-      color: ${props => props.theme["gray-600"]};
+      color: ${(props) => props.theme["gray-600"]};
     }
 
     .servicos {
@@ -155,7 +154,7 @@ export const ServicosContainer = styled.section`
 export const CardServicos = styled.div`
   width: 100%;
   max-width: 16.875rem;
-  height: 17rem;
+  height: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,4 +201,129 @@ export const SecondaryButton = styled.button`
     color: ${(props) => props.theme.white};
     transition: all 0.2s ease-out;
   }
-`
+`;
+
+export const SobreMim = styled.section`
+  width: 100%;
+  height: 836px;
+  background: url("/images/bgSobreMim.png") no-repeat center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .grid {
+    width: 100%;
+    max-width: 80.75rem;
+    padding: 0 1rem;
+    display: flex;
+    gap: 3.5rem;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-weight: 500;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      text-align: center;
+      color: ${(props) => props.theme.white};
+    }
+
+    .banner {
+      display: flex;
+      gap: 0.25rem;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 43.75rem;
+      padding: 2.5rem 2.25rem;
+      background: ${(props) => props.theme.background};
+      margin-bottom: -13.75rem;
+
+      h3 {
+        font-weight: 800;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        text-align: center;
+        color: ${(props) => props.theme["gray-600"]};
+      }
+    }
+
+    .content {
+      width: 100%;
+      display: flex;
+      gap: 5rem;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        width: 50%;
+
+        h3,
+        span,
+        p {
+          color: ${(props) => props.theme.white};
+        }
+
+        h3 {
+          font-weight: 800;
+          font-size: 2.5rem;
+          line-height: 3.4375rem;
+          letter-spacing: -0.01em;
+        }
+
+        span {
+          display: block;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.375rem;
+          letter-spacing: -0.01em;
+          margin-top: 0.25rem;
+          margin-bottom: 2.875rem;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.875rem;
+        }
+      }
+      .line {
+        width: 1px;
+        height: 450px;
+        background: ${(props) => props.theme["gray-200"]};
+      }
+      .right {
+        width: 50%;
+        img {
+          width: 100%;
+          max-width: 420px;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 850px) {
+    height: 780px;
+    background-size: cover;
+    align-items: flex-start;
+    padding-top: 5rem;
+    .grid {
+      h2 {
+        display: none;
+      }
+      .banner {
+        margin-bottom: -10.75rem;
+      }
+      .content {
+        width: 100%;
+        flex-direction: column;
+        .left {
+          width: 100%;
+          text-align: center;
+        }
+        .line {
+          display: none;
+        }
+      }
+    }
+  }
+`;

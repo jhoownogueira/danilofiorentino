@@ -6,12 +6,14 @@ import {
   SecondaryButton,
   ServicosContainer,
   Slide,
+  SobreMim,
 } from "../styles/pages/Index";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FileText, Fire, House, Lightning } from "phosphor-react";
+import { ButtonWhatsapp } from "../styles/Header";
 
 export default function Home() {
   return (
@@ -104,6 +106,41 @@ export default function Home() {
             <SecondaryButton>Todos os serviços</SecondaryButton>
           </div>
         </ServicosContainer>
+        <SobreMim>
+          <div className="grid">
+            <h2>Sobre mim</h2>
+            <div className="content">
+              <div className="left">
+                <h3>Danilo Fiorentino</h3>
+                <span>
+                  Engenheiro Eletricista & Engenheiro de Segurança do Trabalho
+                </span>
+                <p>
+                  Engenheiro Eletricista pós-graduado em Engenharia de Segurança
+                  do Trabalho, formado em 2013, experiência com projetos de
+                  instalação elétrica de baixa e media tensão, projetos de
+                  Loteamento, posto de Transformação Rural, micro e minigeração
+                  solar. Aposta na inovação, na tecnologia para gerar soluções
+                  de engenharia que contribuem para o desenvolvimento.
+                </p>
+              </div>
+              <div className="line"></div>
+              <div className="right">
+                <img src="/images/daniloHome.png" />
+              </div>
+            </div>
+            <div className="banner">
+              <h3>Faça um orçamento comigo</h3>
+              <ButtonWhatsapp
+                href="https://api.whatsapp.com/send?phone=5517996353232"
+                target="_blank"
+              >
+                <img src="/icons/wwp.svg" />
+                Whatsapp
+              </ButtonWhatsapp>
+            </div>
+          </div>
+        </SobreMim>
       </HomeContainer>
     </>
   );
