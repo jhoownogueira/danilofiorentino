@@ -1,4 +1,30 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const Roteate360 = keyframes`
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.05);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+`
+
+const Roteate360_2 = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+`
 
 export const ServicosContainer = styled.section`
   width: 100%;
@@ -21,6 +47,7 @@ export const ServicosContainer = styled.section`
       width: 50%;
 
       span {
+        display: block;
         font-weight: 500;
         font-size: 20px;
         line-height: 150%;
@@ -63,12 +90,15 @@ export const ServicosContainer = styled.section`
         top: 0;
         left: 0;
         z-index: 9;
+        animation: ${Roteate360_2} 8s infinite linear;
+        
       }
       .circulo_externo {
         position: absolute;
         top: 0;
         left: 0;
         z-index: 8;
+        animation: ${Roteate360} 10s infinite linear;
       }
     }
   }
@@ -92,31 +122,29 @@ export const ServicosContainer = styled.section`
         width: 100%;
         margin: 0;
         height: 350px;
-        
+
         img {
-            width: 50%;
+          width: 50%;
         }
 
         .capacete {
-            left: calc(50% - 25%);
+          left: calc(50% - 25%);
         }
 
         .circulo_interno {
-            left: calc(50% - 25%);
-            opacity: 0.5;
+          left: calc(50% - 25%);
+          opacity: 0.5;
         }
 
         .circulo_externo {
-            left: calc(50% - 25%);
+          left: calc(50% - 25%);
         }
       }
-      
     }
   }
 
   @media (max-width: 600px) {
-   height: 720px;
-
+    height: 720px;
   }
 `;
 
@@ -170,7 +198,7 @@ export const AllServices = styled.section`
     }
 
     .swiper {
-        width: 100%;
+      width: 100%;
     }
 
     .swiper-slide {
@@ -180,13 +208,12 @@ export const AllServices = styled.section`
   }
 
   @media (max-width: 600px) {
-   .grid {
-    .swiper-slide {
-      width: 100%;
-      max-width: 20rem;
+    .grid {
+      .swiper-slide {
+        width: 100%;
+        max-width: 20rem;
+      }
     }
-   }
-
   }
 `;
 
@@ -227,11 +254,10 @@ export const SlideServico = styled.div`
   }
 
   @media (max-width: 600px) {
-   h4 {
-    font-size: 1.5rem;
-   }
-   }
-
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export const ButtonCard = styled.a`
@@ -257,5 +283,5 @@ export const ButtonCard = styled.a`
 
   @media (max-width: 600px) {
     width: 75%;
-   }
+  }
 `;

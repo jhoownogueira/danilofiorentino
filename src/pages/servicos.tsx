@@ -23,8 +23,19 @@ import {
   File,
   Fire,
 } from "phosphor-react";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Servicos() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -33,26 +44,51 @@ export default function Servicos() {
       <ServicosContainer>
         <div className="grid">
           <div className="left">
-            <span>Posso te ajudar?</span>
-            <h1>Conheça os meus serviços</h1>
-            <p>Profissionalismo, confiança, qualidade e comprometimento.</p>
+            <span data-aos="fade-right" data-aos-duration="1000">
+              Posso te ajudar?
+            </span>
+            <h1 data-aos="fade-right" data-aos-duration="1000">
+              Conheça os meus serviços
+            </h1>
+            <p data-aos="fade-right" data-aos-duration="1000">
+              Profissionalismo, confiança, qualidade e comprometimento.
+            </p>
             <ButtonOrcamento
               href="https://api.whatsapp.com/send?phone=5517996353232"
               target="_blank"
+              data-aos="fade-in"
+              data-aos-duration="1500"
             >
               Faça um orçamento
             </ButtonOrcamento>
           </div>
           <div className="right">
-            <img src="images/helmet.png" className="capacete" />
-            <img src="images/circleborder.png" className="circulo_externo" />
-            <img src="images/circlecenter.png" className="circulo_interno" />
+            <img
+              src="images/helmet.png"
+              className="capacete"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+            <img
+              src="images/circleborder.png"
+              className="circulo_externo"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            />
+            <img
+              src="images/circlecenter.png"
+              className="circulo_interno"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            />
           </div>
         </div>
       </ServicosContainer>
       <AllServices>
         <div className="grid">
-          <h2>Todos os meus serviços</h2>
+          <h2 data-aos="fade-in" data-aos-duration="1000">
+            Todos os meus serviços
+          </h2>
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
@@ -90,7 +126,7 @@ export default function Servicos() {
               </SlideServico>
             </SwiperSlide>
             <SwiperSlide>
-              <SlideServico>
+              <SlideServico data-aos="fade-right" data-aos-duration="1000">
                 <LightbulbFilament size={80} weight="fill" />
                 <h4>Projeto elétrico de loteamento</h4>
                 <p>
@@ -100,7 +136,7 @@ export default function Servicos() {
               </SlideServico>
             </SwiperSlide>
             <SwiperSlide>
-              <SlideServico>
+              <SlideServico data-aos="fade-up" data-aos-duration="1000">
                 <FileText size={80} weight="fill" />
                 <h4>ART elétrica</h4>
                 <p>
@@ -110,7 +146,7 @@ export default function Servicos() {
               </SlideServico>
             </SwiperSlide>
             <SwiperSlide>
-              <SlideServico>
+              <SlideServico data-aos="fade-left" data-aos-duration="1000">
                 <Lightning size={80} weight="fill" />
                 <h4>Entrada de energia elétrica</h4>
                 <p>
@@ -143,6 +179,8 @@ export default function Servicos() {
           <ButtonCard
             href="https://api.whatsapp.com/send?phone=5517996353232"
             target="_blank"
+            data-aos="fade-down"
+            data-aos-duration="1000"
           >
             Fazer um orçamento
           </ButtonCard>
