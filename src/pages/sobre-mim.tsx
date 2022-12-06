@@ -1,11 +1,29 @@
 import Head from "next/head";
 import { Banner, FormEng, SobreMimContainer } from "../styles/pages/SobreMim";
 
+import { useForm } from "react-hook-form";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+interface FormProps {
+  nome: string;
+  email: string;
+  mensagem: string;
+}
 
 export default function Sobremim() {
+  const [dataForm, setDataForm] = useState<FormProps[]>([]);
+  const { register, handleSubmit, reset } = useForm();
+  function sendForm(data: any) {
+    setDataForm(data);
+
+    reset();
+  }
+
+  console.log(dataForm);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -95,19 +113,28 @@ export default function Sobremim() {
             <h4>50+</h4>
             <span>Clientes</span>
           </div>
-          <FormEng data-aos="fade-up" data-aos-duration="1000">
+          <FormEng
+            onSubmit={handleSubmit(sendForm)}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h4>Tire suas dúvidas comigo</h4>
             <div className="field">
               <label htmlFor="nome">Nome</label>
-              <input type="text" id="nome" name="nome" />
+              <input type="text" id="nome" {...register("nome")} />
             </div>
             <div className="field">
               <label htmlFor="email">E-mail</label>
-              <input type="text" id="email" name="email" />
+              <input type="text" id="email" {...register("email")} />
             </div>
             <div className="field">
               <label htmlFor="mensagem">Mensagem</label>
-              <textarea name="mensagem" id="mensagem" cols={30} rows={10} />
+              <textarea
+                id="mensagem"
+                cols={30}
+                rows={10}
+                {...register("mensagem")}
+              />
             </div>
             <button type="submit">Enviar mensagem</button>
           </FormEng>
