@@ -38,6 +38,10 @@ export default function Home() {
         <meta name="creator" content="Jhonata Nogueira" />
         <meta name="title" content="Projetos Elétricos | ART Elétrica" />
         <meta
+          name="google-site-verification"
+          content="PxNpBexejv-cXKQHKOtsV1mVMmVjnCRCdIvQcyRlyU0"
+        />
+        <meta
           name="description"
           content="Projetos de engenharia elétrica, residencial, industrial, comercial, posto de transformação, laudos, ART padrão de energia. Projeto elétrico de loteamento."
         />
