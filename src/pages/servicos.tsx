@@ -110,8 +110,8 @@ export default function Servicos() {
                 <House size={80} weight="fill" />
                 <h4>Instalação Elétrica</h4>
                 <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
+                  Projeto de instalações elétricas, dimensionamento de circuitos
+                  e quadro de cargas.
                 </p>
               </SlideServico>
             </SwiperSlide>
@@ -120,8 +120,8 @@ export default function Servicos() {
                 <Sun size={80} weight="fill" />
                 <h4>Projeto de energia solar</h4>
                 <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
+                  Projeto de energia solar aprovado na concessionária de
+                  energia. Pronto para execução.
                 </p>
               </SlideServico>
             </SwiperSlide>
@@ -130,8 +130,8 @@ export default function Servicos() {
                 <LightbulbFilament size={80} weight="fill" />
                 <h4>Projeto elétrico de loteamento</h4>
                 <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
+                  Dimensionamento de transformadores para atendimento de
+                  loteamento urbano.
                 </p>
               </SlideServico>
             </SwiperSlide>
@@ -139,40 +139,28 @@ export default function Servicos() {
               <SlideServico data-aos="fade-up" data-aos-duration="1000">
                 <FileText size={80} weight="fill" />
                 <h4>ART elétrica</h4>
-                <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
-                </p>
+                <p>Documento para ligação de padrão de energia elétrica.</p>
               </SlideServico>
             </SwiperSlide>
             <SwiperSlide>
               <SlideServico data-aos="fade-left" data-aos-duration="1000">
                 <Lightning size={80} weight="fill" />
                 <h4>Entrada de energia elétrica</h4>
-                <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
-                </p>
+                <p>Dimensionamento de padrão de medição agrupada.</p>
               </SlideServico>
             </SwiperSlide>
             <SwiperSlide>
               <SlideServico>
                 <File size={80} weight="fill" />
                 <h4>Laudo e perícia elétrica</h4>
-                <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
-                </p>
+                <p>Laudos, perícias elétricas e acompanhamento técnico.</p>
               </SlideServico>
             </SwiperSlide>
             <SwiperSlide>
               <SlideServico>
                 <Fire size={80} weight="fill" />
                 <h4>Projeto de combate ao incêndio</h4>
-                <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
-                </p>
+                <p>Projeto de combate ao incêndio com assinatura digital.</p>
               </SlideServico>
             </SwiperSlide>
           </Swiper>

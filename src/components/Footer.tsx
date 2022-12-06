@@ -24,7 +24,7 @@ export function Footer() {
                 target="_blank"
               >
                 <img src="/icons/wwp-gray.svg" />
-                (17) 99679-0487
+                (17) 99635-3232
               </Link>
               <Link href="mailto:danilofiorentino00@gmail.com">
                 <Envelope size={24} />
