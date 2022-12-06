@@ -16,7 +16,38 @@ export default function Sobremim() {
   return (
     <>
       <Head>
-        <title>Sobre mim | Eng.Danilo</title>
+        <meta name="author" content="Jhonata Nogueira" />
+        <meta name="creator" content="Jhonata Nogueira" />
+        <meta name="title" content="Engenheiro Eletricista | Danilo" />
+
+        <meta
+          name="description"
+          content="Projetos de engenharia elétrica, residencial, industrial, comercial, posto de transformação, laudos, ART padrão de energia. Projeto elétrico de loteamento."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.danilofiorentino.com/" />
+        <meta property="og:title" content="Engenheiro Eletricista | Danilo" />
+        <meta
+          property="og:description"
+          content="Projetos de engenharia elétrica, residencial, industrial, comercial, posto de transformação, laudos, ART padrão de energia. Projeto elétrico de loteamento."
+        />
+        <meta property="og:image" content="/images/meta.jpg" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://www.danilofiorentino.com/"
+        />
+        <meta
+          property="twitter:title"
+          content="Engenheiro Eletricista | Danilo"
+        />
+        <meta
+          property="twitter:description"
+          content="Projetos de engenharia elétrica, residencial, industrial, comercial, posto de transformação, laudos, ART padrão de energia. Projeto elétrico de loteamento."
+        />
+        <meta property="twitter:image" content="/images/meta.jpg" />
       </Head>
       <SobreMimContainer>
         <div className="grid">

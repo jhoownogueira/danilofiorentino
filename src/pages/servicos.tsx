@@ -39,7 +39,35 @@ export default function Servicos() {
   return (
     <>
       <Head>
-        <title>Serviços | Eng.Danilo</title>
+        <meta name="author" content="Jhonata Nogueira" />
+        <meta name="creator" content="Jhonata Nogueira" />
+        <meta name="title" content="Serviços Engenharia Elétrica" />
+
+        <meta
+          name="description"
+          content="Projetos de engenharia elétrica, residencial, industrial, comercial, posto de transformação, laudos, ART padrão de energia. Projeto elétrico de loteamento."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.danilofiorentino.com/" />
+        <meta property="og:title" content="Serviços Engenharia Elétrica" />
+        <meta
+          property="og:description"
+          content="Projetos de engenharia elétrica, residencial, industrial, comercial, posto de transformação, laudos, ART padrão de energia. Projeto elétrico de loteamento."
+        />
+        <meta property="og:image" content="/images/meta.jpg" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://www.danilofiorentino.com/"
+        />
+        <meta property="twitter:title" content="Serviços Engenharia Elétrica" />
+        <meta
+          property="twitter:description"
+          content="Projetos de engenharia elétrica, residencial, industrial, comercial, posto de transformação, laudos, ART padrão de energia. Projeto elétrico de loteamento."
+        />
+        <meta property="twitter:image" content="/images/meta.jpg" />
       </Head>
       <ServicosContainer>
         <div className="grid">
