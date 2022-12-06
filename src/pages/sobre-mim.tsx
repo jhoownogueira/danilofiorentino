@@ -62,7 +62,7 @@ export default function Sobremim() {
           </div>
           <div className="info" data-aos="fade-up" data-aos-duration="1500">
             <h4>50+</h4>
-            <span>Projetos clientes</span>
+            <span>Clientes</span>
           </div>
           <FormEng data-aos="fade-up" data-aos-duration="1000">
             <h4>Tire suas dúvidas comigo</h4>

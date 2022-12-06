@@ -86,7 +86,7 @@ export default function Home() {
         >
           <SwiperSlide>
             <Slide backgroundImage="/images/slide01A.jpg">
-              <h1 data-aos="fade-right">Projetos Elétricos</h1>
+              <h1 data-aos="fade-right">Projetos elétricos</h1>
               <p data-aos="fade-left">
                 Residencial, comercial, industrial, loteamento, posto de
                 transformação rural e sob medida para sua empresa.
@@ -103,7 +103,7 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <Slide backgroundImage="/images/slide02B.jpg">
-              <h1>ART</h1>
+              <h1>ART elétrica</h1>
               <p>
                 ART para ligação de padrão à pedido da concessionária de
                 energia.
@@ -139,10 +139,7 @@ export default function Home() {
               <CardServicos data-aos="fade-up" data-aos-duration="800">
                 <Fire size={60} weight="fill" />
                 <h4>Projeto de combate ao incêndio</h4>
-                <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
-                </p>
+                <p>Projeto de combate ao incêndio com assinatura digital.</p>
               </CardServicos>
               <CardServicos
                 data-aos="fade-up"
@@ -151,10 +148,7 @@ export default function Home() {
               >
                 <Lightning size={60} weight="fill" />
                 <h4>Entrada de energia elétrica</h4>
-                <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
-                </p>
+                <p>Dimensionamento de padrõa de medição agrupada.</p>
               </CardServicos>
               <CardServicos
                 data-aos="fade-up"
@@ -164,8 +158,8 @@ export default function Home() {
                 <House size={60} weight="fill" />
                 <h4>Instalação elétrica</h4>
                 <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
+                  Projeto de instalações elétricas, dimensionamento de circuitos
+                  e quadro de cargas.
                 </p>
               </CardServicos>
               <CardServicos
@@ -175,10 +169,7 @@ export default function Home() {
               >
                 <FileText size={60} weight="fill" />
                 <h4>ART elétrica</h4>
-                <p>
-                  Collect reviews, Q&A and other content from your customers
-                  started.
-                </p>
+                <p>Documento para ligação de padrão de energia elétrica.</p>
               </CardServicos>
             </div>
             <SecondaryButton>
