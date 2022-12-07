@@ -18,7 +18,7 @@ import { useEffect, useState } from "react";
 import { Check } from "phosphor-react";
 
 export default function Sobremim() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const { register, handleSubmit, reset } = useForm();
   async function sendForm(data: any) {
