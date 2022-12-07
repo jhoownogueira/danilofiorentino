@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as AlertDialog from "@radix-ui/react-alert-dialog";
 
 export const SobreMimContainer = styled.section`
   width: 100%;
@@ -66,41 +67,42 @@ export const SobreMimContainer = styled.section`
     }
   }
 
-  @media(max-width:1150px) {
+  @media (max-width: 1150px) {
     height: unset;
     padding-bottom: 0;
     .grid {
-        flex-direction: column;
-        gap: 2rem;
-        justify-content: center;
-        padding-bottom: 0;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      padding-bottom: 0;
 
-        .left {
-            width: 100%;
-            text-align: center;
+      .left {
+        width: 100%;
+        text-align: center;
 
-            h1, span, p {
-                width: 100%;
-                max-width: unset;
-            }
+        h1,
+        span,
+        p {
+          width: 100%;
+          max-width: unset;
+        }
+      }
+
+      .right {
+        width: 100%;
+
+        .engenheiro {
+          position: unset;
+          margin: 0 auto;
         }
 
-        .right {
-            width: 100%;
-            
-           
-            .engenheiro {
-            position: unset;
-            margin: 0 auto;
-            }
-
-            .circles {
-              display: none;
-            }
+        .circles {
+          display: none;
+        }
+      }
     }
   }
-}
-`
+`;
 
 export const Banner = styled.div`
   display: flex;
@@ -265,5 +267,67 @@ export const FormEng = styled.form`
   @media (max-width: 640px) {
     left: 0;
     gap: 2rem;
+  }
+`;
+
+export const Overlay = styled(AlertDialog.Overlay)`
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+`;
+
+export const AlertContent = styled(AlertDialog.Content)`
+  min-width: 32rem;
+  border-radius: 6px;
+  padding: 2.5rem 3rem;
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  .title {
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      border-radius: 50%;
+      background: ${(props) => props.theme.green};
+      color: ${(props) => props.theme.white};
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: ${(props) => props.theme["gray-900"]};
+  }
+`;
+
+export const ButtonAlert = styled(AlertDialog.Cancel)`
+  width: 100%;
+  height: 3rem;
+  background: transparent;
+  border: 1px solid ${(props) => props.theme["primary-color-light"]};
+  border-radius: 6px;
+  color: ${(props) => props.theme["primary-color-light"]};
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  &:hover {
+    transition: all 0.2s;
+    background: ${(props) => props.theme["primary-color-light"]};
+    color: ${(props) => props.theme.white};
   }
 `;

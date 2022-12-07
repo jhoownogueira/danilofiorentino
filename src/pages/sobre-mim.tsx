@@ -1,22 +1,26 @@
 import Head from "next/head";
-import { Banner, FormEng, SobreMimContainer } from "../styles/pages/SobreMim";
+import {
+  AlertContent,
+  Banner,
+  ButtonAlert,
+  FormEng,
+  Overlay,
+  SobreMimContainer,
+} from "../styles/pages/SobreMim";
 import { api } from "../services/api";
+import * as AlertDialog from "@radix-ui/react-alert-dialog";
 
 import { useForm } from "react-hook-form";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
-
-interface FormProps {
-  nome: string;
-  email: string;
-  mensagem: string;
-}
+import { Check } from "phosphor-react";
 
 export default function Sobremim() {
-  const { register, handleSubmit, reset } = useForm();
+  const [isOpen, setIsOpen] = useState(true);
 
+  const { register, handleSubmit, reset } = useForm();
   async function sendForm(data: any) {
     await api
       .post("/send", data)
@@ -26,6 +30,7 @@ export default function Sobremim() {
       .then((response: any) => {
         if (response.status === 200) {
           console.log("Email Enviado");
+          setIsOpen(true);
         }
       })
       .finally(() => {
@@ -149,6 +154,24 @@ export default function Sobremim() {
           </FormEng>
         </div>
       </Banner>
+
+      <AlertDialog.Root open={isOpen} onOpenChange={setIsOpen}>
+        <AlertDialog.Trigger />
+        <AlertDialog.Portal>
+          <Overlay />
+          <AlertContent>
+            <AlertDialog.Title className="title">
+              <div className="icon">
+                <Check size={32} weight="bold" />
+              </div>
+            </AlertDialog.Title>
+            <AlertDialog.Description>
+              <p>Seu e-mail foi enviado com sucesso!</p>
+            </AlertDialog.Description>
+            <ButtonAlert>Voltar</ButtonAlert>
+          </AlertContent>
+        </AlertDialog.Portal>
+      </AlertDialog.Root>
     </>
   );
 }
