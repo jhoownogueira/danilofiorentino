@@ -116,7 +116,7 @@ export default function Sobremim() {
       <Banner>
         <div className="grid">
           <div className="info" data-aos="fade-up" data-aos-duration="1500">
-            <h4>10+</h4>
+            <h4>100+</h4>
             <span>Projetos concluídos</span>
           </div>
           <div className="info" data-aos="fade-down" data-aos-duration="1500">
