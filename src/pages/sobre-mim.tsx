@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Banner, FormEng, SobreMimContainer } from "../styles/pages/SobreMim";
+import { api } from "../services/api";
 
 import { useForm } from "react-hook-form";
 
@@ -14,15 +15,26 @@ interface FormProps {
 }
 
 export default function Sobremim() {
-  const [dataForm, setDataForm] = useState<FormProps[]>([]);
   const { register, handleSubmit, reset } = useForm();
-  function sendForm(data: any) {
-    setDataForm(data);
 
+  async function sendForm(data: any) {
+    console.log(data);
+
+    await api
+      .post("/send", data)
+      .catch((error) => {
+        console.log(error);
+      })
+      .then((response: any) => {
+        if (response.status === 200) {
+          console.log("Email Enviado");
+        }
+      })
+      .finally(() => {
+        reset();
+      });
     reset();
   }
-
-  console.log(dataForm);
 
   useEffect(() => {
     AOS.init({
