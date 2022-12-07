@@ -18,8 +18,6 @@ export default function Sobremim() {
   const { register, handleSubmit, reset } = useForm();
 
   async function sendForm(data: any) {
-    console.log(data);
-
     await api
       .post("/send", data)
       .catch((error) => {
@@ -33,7 +31,6 @@ export default function Sobremim() {
       .finally(() => {
         reset();
       });
-    reset();
   }
 
   useEffect(() => {
