@@ -136,11 +136,11 @@ export default function Sobremim() {
             <h4>Tire suas dúvidas comigo</h4>
             <div className="field">
               <label htmlFor="nome">Nome</label>
-              <input type="text" id="nome" {...register("nome")} />
+              <input type="text" id="nome" {...register("nome")} required/>
             </div>
             <div className="field">
               <label htmlFor="email">E-mail</label>
-              <input type="text" id="email" {...register("email")} />
+              <input type="text" id="email" {...register("email")} required/>
             </div>
             <div className="field">
               <label htmlFor="mensagem">Mensagem</label>
@@ -149,6 +149,7 @@ export default function Sobremim() {
                 cols={30}
                 rows={10}
                 {...register("mensagem")}
+                required
               />
             </div>
             <button type="submit">Enviar mensagem</button>
