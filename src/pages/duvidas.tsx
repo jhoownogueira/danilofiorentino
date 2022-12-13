@@ -68,13 +68,7 @@ export default function Duvidas() {
                 </AccordionHeader>
                 <AccordionContent>
                   <p>
-                    Engenheiro Eletricista pós-graduado em Engenharia de
-                    Segurança do Trabalho, formado em 2013, experiência com
-                    projetos de instalação elétrica de baixa e media tensão,
-                    projetos de Loteamento, posto de Transformação Rural, micro
-                    e minigeração solar. Aposta na inovação, na tecnologia para
-                    gerar soluções de engenharia que contribuem para o
-                    desenvolvimento.
+                  ART é o documento que define, para os efeitos legais, os responsáveis técnicos pelo desenvolvimento de atividade técnica no âmbito das profissões abrangidas pelo Sistema Confea/Crea.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -88,13 +82,7 @@ export default function Duvidas() {
                 </AccordionHeader>
                 <AccordionContent>
                   <p>
-                    Engenheiro Eletricista pós-graduado em Engenharia de
-                    Segurança do Trabalho, formado em 2013, experiência com
-                    projetos de instalação elétrica de baixa e media tensão,
-                    projetos de Loteamento, posto de Transformação Rural, micro
-                    e minigeração solar. Aposta na inovação, na tecnologia para
-                    gerar soluções de engenharia que contribuem para o
-                    desenvolvimento.
+                  O primeiro passo é sempre saber a potência do equipamento e ser energizado, para que assim chegue ao cabo e disjuntor ideal,  sem correr risco de acidentes.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -108,13 +96,7 @@ export default function Duvidas() {
                 </AccordionHeader>
                 <AccordionContent>
                   <p>
-                    Engenheiro Eletricista pós-graduado em Engenharia de
-                    Segurança do Trabalho, formado em 2013, experiência com
-                    projetos de instalação elétrica de baixa e media tensão,
-                    projetos de Loteamento, posto de Transformação Rural, micro
-                    e minigeração solar. Aposta na inovação, na tecnologia para
-                    gerar soluções de engenharia que contribuem para o
-                    desenvolvimento.
+                  O Inicio se dá sempre pelo levantamento da infraestrutura de rede primaria da concessionaria, fazendo assim a derivação para ampliação da rede, com a distribuição dos transformadores para atendimento dos clientes.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -128,13 +110,7 @@ export default function Duvidas() {
                 </AccordionHeader>
                 <AccordionContent>
                   <p>
-                    Engenheiro Eletricista pós-graduado em Engenharia de
-                    Segurança do Trabalho, formado em 2013, experiência com
-                    projetos de instalação elétrica de baixa e media tensão,
-                    projetos de Loteamento, posto de Transformação Rural, micro
-                    e minigeração solar. Aposta na inovação, na tecnologia para
-                    gerar soluções de engenharia que contribuem para o
-                    desenvolvimento.
+                  Em primeiro passo, é feito o levantamento das potência de todos os equipamentos elétricos para assim um dimensionamento ideal do padrão de energia, sendo ele monofásico, bifásico ou trifásico.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -148,13 +124,7 @@ export default function Duvidas() {
                 </AccordionHeader>
                 <AccordionContent>
                   <p>
-                    Engenheiro Eletricista pós-graduado em Engenharia de
-                    Segurança do Trabalho, formado em 2013, experiência com
-                    projetos de instalação elétrica de baixa e media tensão,
-                    projetos de Loteamento, posto de Transformação Rural, micro
-                    e minigeração solar. Aposta na inovação, na tecnologia para
-                    gerar soluções de engenharia que contribuem para o
-                    desenvolvimento.
+                  Universalização é quando a propriedade rural não tem nenhum ponto de energia, e vai ser colocado o primeiro, pode ser feito o pedido pela universalização na concessionaria de energia local, podendo não haver custos na construção da rede de energia para o proprietário.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -168,13 +138,7 @@ export default function Duvidas() {
                 </AccordionHeader>
                 <AccordionContent>
                   <p>
-                    Engenheiro Eletricista pós-graduado em Engenharia de
-                    Segurança do Trabalho, formado em 2013, experiência com
-                    projetos de instalação elétrica de baixa e media tensão,
-                    projetos de Loteamento, posto de Transformação Rural, micro
-                    e minigeração solar. Aposta na inovação, na tecnologia para
-                    gerar soluções de engenharia que contribuem para o
-                    desenvolvimento.
+                  O funcionamento da energia solar acontece da seguinte maneira: os módulos fotovoltaicos captam a luz do sol e produzem a energia. Essa é transportado até o inversor solar que irá converter a energia gerada pelo sistema para as características da rede elétrica.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -188,13 +152,7 @@ export default function Duvidas() {
                 </AccordionHeader>
                 <AccordionContent>
                   <p>
-                    Engenheiro Eletricista pós-graduado em Engenharia de
-                    Segurança do Trabalho, formado em 2013, experiência com
-                    projetos de instalação elétrica de baixa e media tensão,
-                    projetos de Loteamento, posto de Transformação Rural, micro
-                    e minigeração solar. Aposta na inovação, na tecnologia para
-                    gerar soluções de engenharia que contribuem para o
-                    desenvolvimento.
+                  De acordo com as normas, a concessionaria de energia é obrigada a fornecer até 75KVA de potência para um padrão em atendimento de rede secundaria, acima dessa potência, deve ser entrado com projeto particular para construção de um posto de transformação para atendimento do cliente.
                   </p>
                 </AccordionContent>
               </AccordionItem>
