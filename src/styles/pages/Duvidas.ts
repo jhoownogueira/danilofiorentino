@@ -34,6 +34,8 @@ export const DuvidasContainer = styled.section`
     height: 220px;
     background: ${(props) => props.theme["primary-color-light"]};
     padding: 88px 0 0;
+    display: flex;
+    justify-content: center;
 
     .grid {
       width: 100%;
@@ -79,7 +81,6 @@ export const AccordionRoot = styled(Accordion.Root)`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   background: ${(props) => props.theme.background};
 `;
 
@@ -100,6 +101,8 @@ export const AccordionItem = styled(Accordion.Item)`
     background: transparent;
 
     span {
+      display: block;
+      text-align: left;
       font-weight: 700;
       font-size: 1.25rem;
       line-height: 100%;
@@ -107,6 +110,7 @@ export const AccordionItem = styled(Accordion.Item)`
     }
 
     svg {
+      min-width: 32px;
       color: ${(props) => props.theme["primary-color"]};
       transition: all 0.3s;
     }
@@ -120,7 +124,7 @@ export const AccordionItem = styled(Accordion.Item)`
 
 export const AccordionHeader = styled(Accordion.Header)`
   width: 100%;
-  height: 48px;
+  padding: 1.2rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
