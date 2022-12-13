@@ -48,6 +48,7 @@ export default function Sobremim() {
   return (
     <>
       <Head>
+        <title>Engenheiro Eletricista | Danilo</title>
         <meta name="author" content="Jhonata Nogueira" />
         <meta name="creator" content="Jhonata Nogueira" />
         <meta name="title" content="Engenheiro Eletricista | Danilo" />

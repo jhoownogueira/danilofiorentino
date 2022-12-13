@@ -15,7 +15,38 @@ export default function Duvidas() {
   return (
     <>
       <Head>
-        <title>Dúvidas | Eng.Danilo</title>
+        <title>Dúvidas</title>
+        <meta name="author" content="Jhonata Nogueira" />
+        <meta name="creator" content="Jhonata Nogueira" />
+        <meta name="title" content="Dúvidas" />
+        <meta
+          name="description"
+          content="Projetos de engenharia elétrica, residencial, industrial, comercial, posto de transformação, laudos, ART padrão de energia. Projeto elétrico de loteamento."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.danilofiorentino.com/" />
+        <meta property="og:title" content="Dúvidas" />
+        <meta
+          property="og:description"
+          content="Projetos de engenharia elétrica, residencial, industrial, comercial, posto de transformação, laudos, ART padrão de energia. Projeto elétrico de loteamento."
+        />
+        <meta property="og:image" content="/images/meta.jpg" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://www.danilofiorentino.com/"
+        />
+        <meta
+          property="twitter:title"
+          content="Dúvidas"
+        />
+        <meta
+          property="twitter:description"
+          content="Projetos de engenharia elétrica, residencial, industrial, comercial, posto de transformação, laudos, ART padrão de energia. Projeto elétrico de loteamento."
+        />
+        <meta property="twitter:image" content="/images/meta.jpg" />
       </Head>
       <DuvidasContainer>
         <header>
