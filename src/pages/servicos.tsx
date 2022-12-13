@@ -39,6 +39,7 @@ export default function Servicos() {
   return (
     <>
       <Head>
+        <title>Serviços Engenharia Elétrica</title>
         <meta name="author" content="Jhonata Nogueira" />
         <meta name="creator" content="Jhonata Nogueira" />
         <meta name="title" content="Serviços Engenharia Elétrica" />
